@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bank Application</string>
+    <string name="user_hint">User</string>
+    <string name="pwd_hint">Password</string>
+    <string name="lbl_login">Login</string>
+    <string name="logo_content_desc">Logo Image</string>
+    <string name="user_name">José Bernardino</string>
+    <string name="user_agency_account">2050 / 01.111222-4</string>
+    <string name="user_balance">1500.00</string>
+    <string name="lbl_user_account">Conta</string>
+    <string name="lbl_user_account_balance">Saldo</string>
+    <string name="str_operation_type">Pagamento</string>
+    <string name="title_activity_currency">CurrencyActivity</string>
+    <string name="str_recent">Recentes</string>
+</resources>
