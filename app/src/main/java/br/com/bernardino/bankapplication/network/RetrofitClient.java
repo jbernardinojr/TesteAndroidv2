@@ -1,5 +1,6 @@
-package br.com.bernardino.bankapplication;
+package br.com.bernardino.bankapplication.network;
 
+import br.com.bernardino.bankapplication.network.Api;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -14,6 +15,8 @@ public class RetrofitClientInstance {
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
+
+            retrofit.create(Api.class);
         }
         return retrofit;
     }
