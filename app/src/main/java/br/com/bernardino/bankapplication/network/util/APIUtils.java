@@ -3,9 +3,9 @@ package br.com.bernardino.bankapplication.network.util;
 import br.com.bernardino.bankapplication.network.APIService;
 import br.com.bernardino.bankapplication.network.RetrofitClient;
 
-public class ApiUtils {
+public class APIUtils {
 
-    private static final String BASE_URL = "https://bank-app-test.herokuapp.com/api/";
+    private static final String BASE_URL = "https://bank-app-test.herokuapp.com";
 
     public static APIService getAPIService() {
 

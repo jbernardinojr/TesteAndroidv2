@@ -1,4 +1,4 @@
-package br.com.bernardino.bankapplication;
+package br.com.bernardino.bankapplication.login;
 
 import java.util.List;
 

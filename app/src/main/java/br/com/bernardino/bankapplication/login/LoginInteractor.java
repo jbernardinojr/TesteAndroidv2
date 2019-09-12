@@ -1,10 +1,9 @@
-package br.com.bernardino.bankapplication;
+package br.com.bernardino.bankapplication.login;
 
 import java.net.HttpURLConnection;
 
 import br.com.bernardino.bankapplication.interactor.LoginInteractorInput;
 import br.com.bernardino.bankapplication.model.LoginTO;
-import br.com.bernardino.bankapplication.model.UserAccount;
 import br.com.bernardino.bankapplication.network.APIService;
 import br.com.bernardino.bankapplication.network.util.APIUtils;
 import retrofit2.Call;

@@ -16,7 +16,7 @@
             android:name=".CurrencyActivity"
             android:label="@string/title_activity_currency"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".LoginMainActivity">
+        <activity android:name=".login.LoginMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
