@@ -20,6 +20,6 @@ public interface APIService {
     Call<LoginTO> login(@Field("user") String user, @Field("password") String pwd);
 
     @GET("/api/statements/{user_id}")
-    Call<List<Statement>> groupList(@Path("user_id") int userId);
+    Call<List<Statement>> getStatments(@Path("user_id") int userId);
 
 }
