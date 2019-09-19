@@ -1,9 +1,10 @@
-package br.com.bernardino.bankapplication;
+package br.com.bernardino.bankapplication.statement;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import br.com.bernardino.bankapplication.R;
 import br.com.bernardino.bankapplication.model.UserAccount;
 import br.com.bernardino.bankapplication.utils.Utils;
 
