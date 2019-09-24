@@ -1,4 +1,4 @@
-package br.com.bernardino.bankapplication.login.presenter;
+package br.com.bernardino.bankapplication.login;
 
 import android.content.Intent;
 

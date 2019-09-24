@@ -11,7 +11,6 @@ import android.widget.EditText;
 
 import br.com.bernardino.bankapplication.R;
 import br.com.bernardino.bankapplication.login.configurator.LoginConfigurator;
-import br.com.bernardino.bankapplication.login.presenter.Contract;
 import br.com.bernardino.bankapplication.model.UserAccount;
 
 public class LoginMainActivity extends AppCompatActivity implements Contract.LoginActivityInput {

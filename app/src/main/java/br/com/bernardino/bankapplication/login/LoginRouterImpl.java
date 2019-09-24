@@ -5,7 +5,6 @@ import android.content.Intent;
 import java.lang.ref.WeakReference;
 
 import br.com.bernardino.bankapplication.statement.StatementActivity;
-import br.com.bernardino.bankapplication.login.presenter.Contract;
 import br.com.bernardino.bankapplication.model.UserAccount;
 import br.com.bernardino.bankapplication.utils.Utils;
 

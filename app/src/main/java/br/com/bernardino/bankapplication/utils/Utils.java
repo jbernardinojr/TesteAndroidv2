@@ -2,7 +2,6 @@ package br.com.bernardino.bankapplication.utils;
 
 import android.content.Intent;
 
-import br.com.bernardino.bankapplication.login.presenter.Contract;
 import br.com.bernardino.bankapplication.model.UserAccount;
 
 public class Utils {

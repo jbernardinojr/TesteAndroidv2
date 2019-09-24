@@ -2,6 +2,7 @@ package br.com.bernardino.bankapplication.login.presenter;
 
 import java.lang.ref.WeakReference;
 
+import br.com.bernardino.bankapplication.login.Contract;
 import br.com.bernardino.bankapplication.model.UserAccount;
 
 public class LoginPresenterImpl implements Contract.LoginPresenter {

@@ -3,50 +3,30 @@ package br.com.bernardino.bankapplication.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class Statement {
-    @SerializedName("title")
+    @SerializedName("statementList")
     @Expose
-    private String title;
-    @SerializedName("desc")
+    private List<StatementTO> statementList = null;
+    @SerializedName("error")
     @Expose
-    private String desc;
-    @SerializedName("date")
-    @Expose
-    private String date;
-    @SerializedName("value")
-    @Expose
-    private Double value;
+    private Error error;
 
-    public String getTitle() {
-        return title;
+    public List<StatementTO> getStatementList() {
+        return statementList;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setStatementList(List<StatementTO> statementList) {
+        this.statementList = statementList;
     }
 
-    public String getDesc() {
-        return desc;
+    public Error getError() {
+        return error;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
+    public void setError(Error error) {
+        this.error = error;
 
-    public String getDate() {
-        return date;
     }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public Double getValue() {
-        return value;
-    }
-
-    public void setValue(Double value) {
-        this.value = value;
-    }
-
 }
