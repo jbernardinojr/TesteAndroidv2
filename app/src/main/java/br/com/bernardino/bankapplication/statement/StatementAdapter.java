@@ -13,6 +13,7 @@ import java.util.List;
 
 import br.com.bernardino.bankapplication.R;
 import br.com.bernardino.bankapplication.model.StatementTO;
+import br.com.bernardino.bankapplication.utils.Utils;
 
 public class StatementAdapter extends RecyclerView.Adapter<StatementAdapter.StatementViewHolder> {
 
@@ -39,7 +40,7 @@ public class StatementAdapter extends RecyclerView.Adapter<StatementAdapter.Stat
         holder.mTextViewStatementTitle.setText(statement.getTitle());
         holder.mTextViewStatementDesc.setText(statement.getDesc());
         holder.mTextViewStatementValue.setText(String.valueOf(statement.getValue()));
-        holder.mTextViewDate.setText(statement.getDate());
+        holder.mTextViewDate.setText(Utils.formatDate(statement.getDate()));
     }
 
     @Override
