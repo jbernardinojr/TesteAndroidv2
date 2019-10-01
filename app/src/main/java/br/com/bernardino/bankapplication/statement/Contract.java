@@ -13,6 +13,7 @@ public interface Contract {
 
     interface StatementActivityInput {
         void notifyErrorToUser(String message);
+        void showProgressDialog();
         void onLogoutPressed();
         void onSuccessStatement(Statement statement);
         void onErrorStatement(Error error);

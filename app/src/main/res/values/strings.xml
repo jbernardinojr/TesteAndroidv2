@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Bank Application</string>
     <string name="user_hint">User</string>
     <string name="pwd_hint">Password</string>
@@ -13,4 +13,8 @@
     <string name="title_activity_currency">CurrencyActivity</string>
     <string name="str_recent">Recentes</string>
     <string name="login_error_ok">OK</string>
+    <string name="ib_logout_content_desc">Logout</string>
+    <string name="title_dialog_loading">loading ...</string>
+    <string name="bank_account_agency">%1$s / %2$s</string>
+    <string name="bank_account_balance">R$ %1$s</string>
 </resources>

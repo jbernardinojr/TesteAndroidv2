@@ -13,6 +13,12 @@ import retrofit2.Response;
 
 public class StatementInteractorInputImpl implements StatementInteractorInput {
     private StatementPresenterImpl output;
+    private int mUserId;
+
+    public StatementInteractorInputImpl (int userId) {
+        mUserId = userId;
+        fetchStatement(mUserId);
+    }
 
     public void setOutput(StatementPresenterImpl output) {
         this.output = output;

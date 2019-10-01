@@ -7,6 +7,7 @@ import br.com.bernardino.bankapplication.login.LoginInteractorInputImpl;
 import br.com.bernardino.bankapplication.login.LoginMainActivity;
 import br.com.bernardino.bankapplication.login.LoginRouterImpl;
 import br.com.bernardino.bankapplication.login.presenter.LoginPresenterImpl;
+import br.com.bernardino.bankapplication.model.UserAccount;
 import br.com.bernardino.bankapplication.statement.StatementActivity;
 import br.com.bernardino.bankapplication.statement.StatementInteractorInputImpl;
 import br.com.bernardino.bankapplication.statement.presenter.StatementPresenterImpl;
@@ -14,7 +15,7 @@ import br.com.bernardino.bankapplication.statement.router.StatementRouterImpl;
 
 public enum StatementConfigurator {
     INSTANCE;
-    public void configure(StatementActivity statementActivity) {
+    public void configure(StatementActivity statementActivity, int userId) {
 
         StatementRouterImpl router = new StatementRouterImpl();
         router.setActivity(new WeakReference<>(statementActivity));
@@ -23,7 +24,7 @@ public enum StatementConfigurator {
         presenter.setOutput(new WeakReference<>(statementActivity));
 
 
-        StatementInteractorInputImpl interactor = new StatementInteractorInputImpl();
+        StatementInteractorInputImpl interactor = new StatementInteractorInputImpl(userId);
         interactor.setOutput(presenter);
 
         if (statementActivity.getOutput() == null) {

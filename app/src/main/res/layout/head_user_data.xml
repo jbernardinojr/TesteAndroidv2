@@ -14,10 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="27dp"
         tools:text="@string/user_name" />
 
     <TextView
@@ -77,15 +80,18 @@
         app:layout_constraintVertical_bias="0.006"
         tools:text="@string/user_balance" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="27dp"
-        android:layout_height="27dp"
+    <ImageButton
+        android:adjustViewBounds="false"
+        android:background="@color/colorPrimary"
+        android:id="@+id/ib_logout"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toEndOf="@+id/tv_user_name"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/ib_logout_content_desc"
         app:srcCompat="@drawable/logout2" />
 
 
