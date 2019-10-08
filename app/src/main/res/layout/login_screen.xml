@@ -55,7 +55,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="32dp"
         android:layout_marginTop="204dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/rounded_button"
         android:text="@string/lbl_login"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
